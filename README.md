@@ -19,6 +19,12 @@
  ## Installation
  
  To install this project, clone this repository and run "npm i" in an integrated terminal. You must have node installed. Ensure you have installed express, sequalize, and mysql2. Next, login to the MySQL shell and run "source db/schema.sql", followed by "use ecommerce_db". Then quit your MySQL shell and run "npm run seed", followed by "npm start". All set!
+
+ Note: This file utilizes a .env file, which is ignored by the .gitignore file. Please be sure to create an .env file with your credentials. It will contain the following syntax:
+
+    DB_NAME='ecommerce_db'
+    DB_USER='YOUR_USERNAME'
+    DB_PW='YOUR_PASSWORD'
  
  ## Usage
  
