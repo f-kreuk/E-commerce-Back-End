@@ -36,7 +36,7 @@ See below a screenshot of the prompts in action:
 
 See below a walkthrough video for utilizing the application:
 
-[![Walkthrough Video](add..)](add..)
+[![Walkthrough Video](https://www.youtube.com/watch?v=EdeEd2uNYAw)](https://www.youtube.com/watch?v=EdeEd2uNYAw)
 
  
  ## License
