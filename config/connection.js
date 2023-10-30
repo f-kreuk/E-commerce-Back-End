@@ -1,3 +1,5 @@
+// sets up database connection using sequelize library and exports configured database connection object
+
 require('dotenv').config();
 
 const Sequelize = require('sequelize');
