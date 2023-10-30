@@ -51,8 +51,24 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.put('/:id', (req, res) => {
+router.put('/:id', async (req, res) => {
   // update a category by its `id` value
+  try {
+    const categoryId = req.params.id; //getting id from URL
+    const { category_name } = req.body; //getting new name from body
+    const category = await Category.findByPk(categoryId);
+    if (!category) {
+      res.status(404).json({ message: 'No category found with this id!'});
+      return;
+    }
+    //updating category with new name
+    category.category_name = category_name;
+    await category.save();
+    res.status(200).json(category);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json(err);
+  }
 });
 
 router.delete('/:id', async (req, res) => {
